@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #262626;
+}
+
+hr {
+border: transparent;
+}
+
+
+#input_container, #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    margin-bottom: 5px;
+}
+
+#input_container input[type=text] {
+    margin-bottom: 5px;
+    width: 430px;
+    height: 35px;
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: #F2F2F2;
+    border: 0.25rem solid #F2F2F2;
+    outline: none;
+    background-color: #262626;
+    color: #F2F2F2
+    ;
+}
+
+#input_container #expressao,
+#input_container #resposta {
+    text-align: right;
+}
+
+
+#controle_primario .pri_botao,
+#controle_adcional .adi_botao,
+#controle_primario .active,
+#controle_adcional .active {
+all: unset;
+border: medium solid #F2F2F2;
+margin: 5px 1px ;
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+color: #F2F2F2;
+
+}
+
+#controle_primario .pri_botao {
+    width: 80px;
+    height: 40px;
+    margin: 5px 1px;
+    font-size: 1.3rem;
+    background-color: #262626;
+}
+
+#controle_primario .pri_botao#Del,
+#controle_primario .pri_botao#AC {
+    background-color: #F24405;
+}
+
+#controle_primario .pri_botao:active,
+#controle_primario .active {
+    width: 80px;
+    height: 40px;
+    margin: 5px 1px;
+    font-size: 1.3rem;
+    background: #F25C05;
+}
+
+#primario_controle .pri_botao#Del:active,
+#primario_controle .pri_botao#AC:active{
+    width: 80px;
+    height: 40px;
+    margin: 5px 1px;
+    font-size: 1.3rem;
+    background: #8C3908;
+}
+
+#controle_adcional .adi_botao{
+    width: 64.5px;
+    height: 30px;
+    margin: 5px 1px;
+    font-size: 18px;
+    background-color: #262626;
+}
+
+#controle_adcional .adi_botao:active,
+#controle_adcional .active {
+    width: 64.5px;
+    height: 30px;
+    margin: 5px 1px;
+    font-size: 18px;
+    background-color: #8C3908;
+    border-color: #8C3908;
+}
+
+@media (max-width: 768px) {
+#container{
+    width: max-content;
+
+}
+#controle_primario,
+#controle_adcional{
+    width: auto;
+}
+#controle_primario .pri_botao {
+    width: 16vw;
+    height:5vh;
+    margin: 1vh 0.5vw;
+    font-size: 1.3rem;
+}
+#controle_primario .pri_botao:active,
+#controle_primario .active {
+    width: 16vw;
+    height:5vh;
+    margin: 1vh 0.5vw;
+    font-size: 1.3rem;
+    background: #F25C05;
+}
+
+#controle_adcional .adi_botao{
+    width: 13vw;
+    height:5vh;
+    margin: 1vh 0.5vw;
+    font-size: 1rem;
+}
+#controle_adcional .adi_botao:active,
+#controle_adcional .active {
+    width: 13vw;
+    height:5vh;
+    margin: 1vh 0.5vw;
+    font-size: 1rem;
+}
+#container {
+width: auto;
+display:grid;
+grid-template-rows: 20% 40% auto;
+padding: 0;
+margin: 1vw 1vh;
+}
+#input_container {
+    width: 84vw;
+    align-self: center;
+}
+
+
+#input_container input[type=text] {
+    margin-bottom: 0.5vh;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    color: #F2F2F2;
+    border: 0.25rem solid #F2F2F2;
+    outline: none;
+    background-color: #262626;
+    color: #F2F2F2
+    ;
+}
+
+}
